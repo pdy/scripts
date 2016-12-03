@@ -4,9 +4,8 @@ toBeReplaced=$1
 newStr=$2
 dir='./'
 
-if [ $# -eq 3 ]
-    then
-       dir=$3 
+if [ $# -eq 3 ] then
+    dir=$3 
 fi
 
 echo "Replacing [$toBeReplaced] to [$newStr] in dir [$dir]"

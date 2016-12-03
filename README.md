@@ -1,8 +1,7 @@
 # scripts
 
 Few helper scripts I use in daily basis or when spawning new machine.
-Shorter ones are usually placed in my /usr/bin with diffrent name than one
-present in repository.
+They are not perfect but usually works.
 
 Be sure to read them first before first use.
 
