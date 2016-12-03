@@ -7,16 +7,16 @@ cd repo/github
 
 apt-get install git &&
 
-git clone https://github.com/severalgh/scripts.git &&
+git clone https://github.com/severalgh/scripts.git
 
-git clone https://github.com/severalgh/dotfiles.git &&
+git clone https://github.com/severalgh/dotfiles.git
 
-./scripts/vim_from_source.sh
+./scripts/vim_from_src.sh
 
 cd ~/
 cp repo/github/dotfiles/vim/.vimrc ./
-#mkdir .vim
-./repo/github/vundle_checkout.sh
+
+./repo/github/scripts/vundle_checkout.sh
 cp repo/github/dotfiles/vim/.ycm_extra_conf.py ~/.vim/
 
 
