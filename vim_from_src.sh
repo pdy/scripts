@@ -1,17 +1,20 @@
 #!/bin/bash
 
+#
+# Should be run as local user
+#
 
-apt-get install libncurses5-dev libgnome2-dev libgnomeui-dev \
+sudo apt-get install libncurses5-dev libgnome2-dev libgnomeui-dev \
     libgtk2.0-dev libatk1.0-dev libbonoboui2-dev \
     libcairo2-dev libx11-dev libxpm-dev libxt-dev python-dev \
     python3-dev ruby-dev lua5.1 lua5.1-dev libperl-dev git
 
 
-apt-get remove vim vim-runtime gvim
+sudo apt-get remove vim vim-runtime gvim
 
-apt-get remove vim-tiny vim-common vim-gui-common vim-nox
+sudo apt-get remove vim-tiny vim-common vim-gui-common vim-nox
 
-apt-get autoremove
+sudo apt-get autoremove
 
 cd ~
 git clone https://github.com/vim/vim.git
@@ -31,12 +34,12 @@ cd vim
 make VIMRUNTIMEDIR=/usr/share/vim/vim80
 
 cd ~/vim
-make install
+sudo make install
 
-update-alternatives --install /usr/bin/editor editor /usr/bin/vim 1
-update-alternatives --set editor /usr/bin/vim
-update-alternatives --install /usr/bin/vi vi /usr/bin/vim 1
-update-alternatives --set vi /usr/bin/vim
+sudo update-alternatives --install /usr/bin/editor editor /usr/bin/vim 1
+sudo update-alternatives --set editor /usr/bin/vim
+sudo update-alternatives --install /usr/bin/vi vi /usr/bin/vim 1
+sudo update-alternatives --set vi /usr/bin/vim
 
 
 

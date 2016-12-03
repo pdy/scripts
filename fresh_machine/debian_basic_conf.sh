@@ -1,8 +1,17 @@
 #!/bin/bash
 
+#
+# Should be run as root
+#
+
+if [ "$(id -u)" != "0" ]; then
+    echo "This script must be run as root"
+    exit 1
+fi
+
 if [ $# -eq 0 ]; then
-   echo "Username should be provided as first argument" 
-   exit
+   echo "Local username should be provided as first argument" 
+   exit 1
 fi
 
 userName=$1

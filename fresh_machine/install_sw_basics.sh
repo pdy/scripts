@@ -1,11 +1,20 @@
 #!/bin/bash
 
+#
+# Should be run as local user
+#
+
+if [ "$(id -u)" == "0" ]; then
+    echo "This script must not be run as root"
+    exit 1
+fi
+
 cd ~/
 mkdir repo
 mkdir repo/github
 cd repo/github
 
-apt-get install git &&
+sudo apt-get install git
 
 git clone https://github.com/severalgh/scripts.git
 
