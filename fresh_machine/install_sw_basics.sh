@@ -14,7 +14,7 @@ mkdir repo
 mkdir repo/github
 cd repo/github
 
-sudo apt-get install git htop clang
+sudo apt-get install git htop clang gdb
 
 git clone https://github.com/severalgh/scripts.git
 
