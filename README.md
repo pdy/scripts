@@ -1,6 +1,6 @@
 # scripts
 
-Few helper scripts I use in daily basis or when spawning new machine.
+Quick and dirty helper scripts I use in daily basis or when spawning new machine.
 They are not perfect but usually works.
 
 Be sure to read them first before first use.
