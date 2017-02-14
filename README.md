@@ -1,6 +1,7 @@
 # scripts
 
-Few helper scripts I use in daily basis or when spawning new machine.
+Few helper scripts I use daily, when spawning new machine or
+just to save usefull ones to not google them.
 They are not perfect but usually works.
 
 Be sure to read them first before first use.
@@ -9,7 +10,7 @@ Be sure to read them first before first use.
 
 Redistribution and use with or without modification, are permitted.
 
-THIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY
+THIS SOFTWARE IS PROVIDED AS IS AND ANY
 EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
 IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
 PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE OWNER OF REPOSITORY  OR
