@@ -4,6 +4,11 @@
 # Should be run as local user
 #
 
+if [ "$(id -u)" == "0" ]; then
+    echo "This script must not be run as root"
+    exit 1
+fi
+
 sudo apt-get install libncurses5-dev libgnome2-dev libgnomeui-dev \
     libgtk2.0-dev libatk1.0-dev libbonoboui2-dev \
     libcairo2-dev libx11-dev libxpm-dev libxt-dev python-dev \
