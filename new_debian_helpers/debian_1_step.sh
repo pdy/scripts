@@ -14,18 +14,19 @@ mkdir repo
 mkdir repo/github
 cd repo/github
 
-sudo apt-get install git htop clang gdb
+sudo apt-get install git htop clang gdb build-essentials &&
 
-git clone https://github.com/severalgh/scripts.git
+git clone https://github.com/severalgh/scripts.git &&
 
-git clone https://github.com/severalgh/dotfiles.git
+git clone https://github.com/severalgh/dotfiles.git &&
 
-./scripts/vim_from_src.sh
+sudo ./scripts/new_debian_helpers/guest_additions.sh
+./scripts/vim/vim_from_src.sh
 
 cd ~/
 cp repo/github/dotfiles/vim/.vimrc ./
 
-./repo/github/scripts/vundle_checkout.sh
+./repo/github/scripts/vim/vundle_checkout.sh
 cp repo/github/dotfiles/vim/.ycm_extra_conf.py ~/.vim/
 
 
