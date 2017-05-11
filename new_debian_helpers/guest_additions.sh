@@ -8,6 +8,6 @@ fi
 echo "Installing vbox guest additions"
 apt-get install build-essential module-assistant &&
 m-a prepare &&
-mount /media/cdrom &&
+mount /media/cdrom
 sh /media/cdrom/VBoxLinuxAdditions.run
 
