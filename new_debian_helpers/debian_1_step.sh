@@ -14,7 +14,7 @@ mkdir repo
 mkdir repo/github
 cd repo/github
 
-sudo apt-get -qq install git git-core htop clang gdb build-essential cmake nmap cloc &&
+sudo apt-get install git git-core htop clang gdb build-essential cmake nmap cloc linux-tools &&
 
 git clone https://github.com/severalgh/scripts.git &&
 
