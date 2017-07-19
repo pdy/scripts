@@ -4,7 +4,7 @@ toBeReplaced=$1
 newStr=$2
 dir='./'
 
-if [ $# -eq 3 ] then
+if [ $# -eq 3 ]; then
     dir=$3 
 fi
 
