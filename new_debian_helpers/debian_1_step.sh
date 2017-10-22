@@ -10,8 +10,7 @@ if [ "$(id -u)" == "0" ]; then
 fi
 
 cd ~/
-mkdir repo
-mkdir repo/github
+mkdir -p repo/github
 cd repo/github
 
 sudo apt-get install git git-core htop clang gdb build-essential cmake nmap cloc linux-tools tmux &&
@@ -29,6 +28,10 @@ cp repo/github/dotfiles/tmux/.tmux.conf ./
 
 ./repo/github/scripts/vim/vundle_checkout.sh
 cp repo/github/dotfiles/vim/.ycm_extra_conf.py ~/.vim/
+
+mkdir ~/.vim/colors
+cp repo/github/dotfiles/vim/solarized.vim ~/.vim/colors
+
 
 
 
