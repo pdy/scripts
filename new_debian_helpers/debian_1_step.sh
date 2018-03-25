@@ -13,7 +13,7 @@ cd ~/
 mkdir -p repo/github
 cd repo/github
 
-sudo apt-get install git git-core htop clang gdb build-essential cmake nmap cloc linux-tools tmux &&
+sudo apt-get install git git-core htop clang gdb build-essential cmake nmap cloc linux-tools &&
 
 git clone https://github.com/severalgh/scripts.git &&
 
@@ -24,7 +24,6 @@ sudo ./scripts/new_debian_helpers/guest_additions.sh
 
 cd ~/
 cp repo/github/dotfiles/vim/.vimrc ./
-cp repo/github/dotfiles/tmux/.tmux.conf ./
 
 ./repo/github/scripts/vim/vundle_checkout.sh
 cp repo/github/dotfiles/vim/.ycm_extra_conf.py ~/.vim/
