@@ -23,13 +23,8 @@ sudo ./scripts/new_debian_helpers/guest_additions.sh
 ./scripts/vim/vim_from_src.sh
 
 cd ~/
-cp repo/github/dotfiles/vim/.vimrc ./
-
 ./repo/github/scripts/vim/vundle_checkout.sh
-cp repo/github/dotfiles/vim/.ycm_extra_conf.py ~/.vim/
-
-mkdir ~/.vim/colors
-cp repo/github/dotfiles/vim/solarized.vim ~/.vim/colors
+./repo/github/dotfiles/install.sh
 
 
 
