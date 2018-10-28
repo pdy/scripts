@@ -6,7 +6,7 @@ if [ $# -ne 1 ]; then
 fi
 
 cd /tmp &&
-git clone https://github.com/severalgh/AppTemplate.git
+git clone https://github.com/pdy/AppTemplate.git
 sudo rm -r AppTemplate/.git
 cd - &&
 

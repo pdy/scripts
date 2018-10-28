@@ -15,9 +15,9 @@ cd repo/github
 
 sudo apt-get install git git-core htop clang gdb build-essential cmake nmap cloc linux-tools &&
 
-git clone https://github.com/severalgh/scripts.git &&
+git clone https://github.com/pdy/scripts.git &&
 
-git clone https://github.com/severalgh/dotfiles.git &&
+git clone https://github.com/pdy/dotfiles.git &&
 
 sudo ./scripts/new_debian_helpers/guest_additions.sh
 ./scripts/vim/vim_from_src.sh
