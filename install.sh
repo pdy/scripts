@@ -9,11 +9,13 @@ if [ "$(id -u)" != "0" ]; then
     exit 1
 fi
 
+SCRIPT_DIR=`dirname "$0"`
+
 echo "Installing nfar"
-cp ./utils/find_and_replace.sh /usr/bin/nfar && chmod +x /usr/bin/nfar &&
+cp $SCRIPT_DIR/utils/find_and_replace.sh /usr/bin/nfar && chmod +x /usr/bin/nfar &&
 echo "Installing nupdate"
-cp ./utils/nupdate.sh /usr/bin/nupdate && chmod +x /usr/bin/nupdate &&
+cp $SCRIPT_DIR/utils/nupdate.sh /usr/bin/nupdate && chmod +x /usr/bin/nupdate &&
 echo "Installing napp"
-cp ./utils/new_app.sh /usr/bin/napp && chmod +x /usr/bin/napp &&
+cp $SCRIPT_DIR/utils/new_app.sh /usr/bin/napp && chmod +x /usr/bin/napp &&
 echo "Installing ngrep"
-cp ./utils/ngrep.sh /usr/bin/ngrep && chmod +x /usr/bin/ngrep
+cp $SCRIPT_DIR/utils/ngrep.sh /usr/bin/ngrep && chmod +x /usr/bin/ngrep
