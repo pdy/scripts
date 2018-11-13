@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #
-# Should be run as root
+# Should be run as su
 #
 
 if [ "$(id -u)" != "0" ]; then
