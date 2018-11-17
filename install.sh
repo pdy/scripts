@@ -12,10 +12,10 @@ fi
 SCRIPT_DIR=`dirname "$0"`
 
 echo "Installing nfar"
-cp $SCRIPT_DIR/utils/find_and_replace.sh /usr/bin/nfar && chmod +x /usr/bin/nfar &&
+cp $SCRIPT_DIR/utils/nfar.sh /usr/bin/nfar && chmod +x /usr/bin/nfar &&
 echo "Installing nupdate"
 cp $SCRIPT_DIR/utils/nupdate.sh /usr/bin/nupdate && chmod +x /usr/bin/nupdate &&
 echo "Installing napp"
-cp $SCRIPT_DIR/utils/new_app.sh /usr/bin/napp && chmod +x /usr/bin/napp &&
+cp $SCRIPT_DIR/utils/napp.sh /usr/bin/napp && chmod +x /usr/bin/napp &&
 echo "Installing ngrep"
 cp $SCRIPT_DIR/utils/ngrep.sh /usr/bin/ngrep && chmod +x /usr/bin/ngrep
