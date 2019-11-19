@@ -19,3 +19,5 @@ echo "Installing napp"
 cp $SCRIPT_DIR/utils/napp.sh /usr/bin/napp && chmod +x /usr/bin/napp &&
 echo "Installing ngrep"
 cp $SCRIPT_DIR/utils/ngrep.sh /usr/bin/ngrep && chmod +x /usr/bin/ngrep
+echo "Installing nsysver"
+cp $SCRIPT_DIR/utils/nsysver.sh /usr/bin/nsysver && chmod +x /usr/bin/nsysver
