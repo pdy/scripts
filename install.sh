@@ -11,13 +11,19 @@ fi
 
 SCRIPT_DIR=`dirname "$0"`
 
-echo "Installing nfar"
-cp $SCRIPT_DIR/utils/nfar.sh /usr/bin/nfar && chmod +x /usr/bin/nfar &&
-echo "Installing nupdate"
-cp $SCRIPT_DIR/utils/nupdate.sh /usr/bin/nupdate && chmod +x /usr/bin/nupdate &&
-echo "Installing napp"
-cp $SCRIPT_DIR/utils/napp.sh /usr/bin/napp && chmod +x /usr/bin/napp &&
-echo "Installing ngrep"
-cp $SCRIPT_DIR/utils/ngrep.sh /usr/bin/ngrep && chmod +x /usr/bin/ngrep
-echo "Installing nsysver"
-cp $SCRIPT_DIR/utils/nsysver.sh /usr/bin/nsysver && chmod +x /usr/bin/nsysver
+#for f in $SCRIPT_DIR/utils/pdy_*; do
+
+baseName=`echo $f | cut -d "." -f 2`
+#echo $baseName
+#echo cp $f /usr/bin/$baseName &&
+
+  
+#echo cp -a $f ${f%%.sh}
+  
+#chmod +x /usr/bin/$baseName
+
+
+#done
+
+cp $SCRIPT_DIR/utils/pdy_* /usr/bin/
+chmod +x /usr/bin/pdy_*
