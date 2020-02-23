@@ -18,6 +18,6 @@ userName=$1
 
 apt-get update && apt-get upgrade &&
 apt-get install sudo &&
-adduser $userName sudo &&
+/sbin/adduser $userName sudo &&
 
-reboot now
+systemctl reboot
