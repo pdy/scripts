@@ -14,7 +14,7 @@ mkdir -p repo/github
 cd repo/github
 
 # install what is essential
-sudo apt-get install git git-core htop clang gdb build-essential cmake nmap cloc linux-tools &&
+sudo apt-get install git git-core htop clang gdb build-essential cmake nmap cloc linux-perf &&
 
 # install my custom stuff
 git clone https://github.com/pdy/scripts.git &&
