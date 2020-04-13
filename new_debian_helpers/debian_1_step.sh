@@ -10,8 +10,8 @@ if [ "$(id -u)" == "0" ]; then
 fi
 
 cd ~/
-mkdir -p repo/github
-cd repo/github
+mkdir -p repo
+cd repo
 
 # install what is essential
 sudo apt-get install git git-core htop clang gdb build-essential cmake nmap cloc linux-perf vifm &&
@@ -22,11 +22,11 @@ git clone https://github.com/pdy/dotfiles.git &&
 
 sudo ./scripts/new_debian_helpers/guest_additions.sh
 ./scripts/vim/vim_from_src.sh
-sudo ./repo/github/scripts/install.sh
+sudo ./repo/scripts/install.sh
 
 cd ~/
-./repo/github/scripts/vim/vundle_checkout.sh
-./repo/github/dotfiles/install.sh
+./repo/scripts/vim/vundle_checkout.sh
+./repo/dotfiles/install.sh
 
 
 
