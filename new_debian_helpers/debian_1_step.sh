@@ -14,7 +14,7 @@ mkdir -p repo
 cd repo
 
 # install what is essential
-sudo apt-get install git git-core htop clang gdb build-essential cmake nmap cloc linux-perf vifm &&
+sudo apt-get install git git-core htop clang gdb build-essential cmake nmap cloc linux-perf vifm xorg-dev &&
 
 # install my custom stuff
 git clone https://github.com/pdy/scripts.git &&
