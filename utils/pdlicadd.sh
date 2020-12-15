@@ -1,11 +1,11 @@
 #!/bin/bash
 
-if [ $# -ne 1 ]; then
-    echo "Invalid argument count! Need to pass path to license file which contains license terms."
+if [ $# -ne 2 ]; then
+    echo "Invalid argument count! First argument is LICENSE second file type [cpp, h, hpp etc.]"
     exit
 fi
 
-for i in $(find . -name '*.cpp'); # or whatever pattern
+for i in $(find . -name "*.$2");
 do
   if ! grep -q Copyright "$i"
   then
