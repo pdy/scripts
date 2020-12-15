@@ -16,5 +16,5 @@ rm $1/README.md
 
 grep -rl AppTemplate $1 | xargs sed -i "s/AppTemplate/$1/g" &&
 
-mv $1/src/AppTemplate.cpp $1/src/$1.cpp
+mv $1/AppTemplate.cpp $1/$1.cpp
 
