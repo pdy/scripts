@@ -25,7 +25,7 @@ sudo ./scripts/new_debian_helpers/guest_additions.sh
 sudo ./repo/scripts/install.sh
 
 cd ~/
-./repo/scripts/vim/vundle_checkout.sh
+./repo/scripts/vim/vun_plug_install.sh
 ./repo/dotfiles/install.sh
 
 
