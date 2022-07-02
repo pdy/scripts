@@ -14,7 +14,7 @@ mkdir -p repo
 cd repo
 
 # install what is essential
-sudo apt-get install git git-core htop clang gdb build-essential cmake nmap cloc linux-perf vifm fzf nodejs npm &&
+sudo apt install curl git git-core htop clang gdb build-essential cmake nmap cloc linux-perf vifm fzf nodejs npm &&
 
 # install my custom stuff
 git clone https://github.com/pdy/scripts.git &&
@@ -25,7 +25,7 @@ sudo ./scripts/new_debian_helpers/guest_additions.sh
 sudo ./repo/scripts/install.sh
 
 cd ~/
-./repo/scripts/vim/vun_plug_install.sh
+./repo/scripts/vim/vim_plug_install.sh
 ./repo/dotfiles/install.sh
 
 
