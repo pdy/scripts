@@ -17,8 +17,10 @@ cd repo
 sudo apt install curl git git-core htop clang gdb build-essential cmake nmap cloc linux-perf vifm fzf nodejs npm &&
 
 # install my custom stuff
-git clone https://github.com/pdy/scripts.git &&
-git clone https://github.com/pdy/dotfiles.git &&
+
+git@github.com:pdy/dotfiles.git
+git clone git@github.com:pdy/dotfiles.git &&
+git clone git@github.com:pdy/scripts.git &&
 
 sudo ./scripts/new_debian_helpers/guest_additions.sh
 ./scripts/vim/vim_from_src.sh
