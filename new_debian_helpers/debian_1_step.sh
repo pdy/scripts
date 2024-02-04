@@ -14,11 +14,11 @@ mkdir -p repo
 cd repo
 
 # install what is essential
-sudo apt install curl git git-core htop clang gdb build-essential cmake nmap cloc linux-perf vifm fzf nodejs npm &&
+sudo apt -y install curl git git-core htop clang gdb build-essential cmake nmap cloc linux-perf vifm fzf nodejs npm &&
 
 # install my custom stuff
 
-git@github.com:pdy/dotfiles.git
+# git@github.com:pdy/dotfiles.git
 git clone git@github.com:pdy/dotfiles.git &&
 git clone git@github.com:pdy/scripts.git &&
 
