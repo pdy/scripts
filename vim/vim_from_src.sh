@@ -35,7 +35,7 @@ cd vim
             --prefix=/usr/local
 
 
-make VIMRUNTIMEDIR=/usr/local/share/vim/vim90
+make VIMRUNTIMEDIR=/usr/local/share/vim/vim91
 
 cd ~/vim
 sudo make install
