@@ -26,4 +26,4 @@ baseName=`echo $f | cut -d "." -f 2`
 #done
 
 cp $SCRIPT_DIR/utils/pd* /usr/bin/
-chmod +x /usr/bin/pd*
+#chmod +x /usr/bin/pd*
