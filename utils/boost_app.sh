@@ -5,12 +5,16 @@ if [ $# -ne 1 ]; then
     exit 1
 fi
 
-cd /tmp &&
+TMP=$HOME/tmp
+
+mkdir -p $TMP &&
+
+cd $TMP &&
 git clone https://github.com/pdy/BoostAppTemplate.git
-sudo rm -r BoostAppTemplate/.git
+rm -rf BoostAppTemplate/.git
 cd - &&
 
-mv /tmp/BoostAppTemplate $1 &&
+mv $TMP/BoostAppTemplate $1 &&
 
 rm $1/README.md
 
