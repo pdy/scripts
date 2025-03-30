@@ -1,15 +1,19 @@
 #!/bin/bash
 
 #
-# Should be run as su
+# Should be run as local user
 #
 
+if [ "$(id -u)" == "0" ]; then
+    echo "This script must not be run as su !!!"
+    exit 1
+fi
 
-echo "NOT IMPLEMENTED !!!"
+INSTALL_PATH=$HOME/bin
 
-#if [ "$(id -u)" != "0" ]; then
-#    echo "Need su privileges to access /usr/bin"
-#    exit 1
-#fi
-
-#rm /usr/bin/pd*
+echo ""
+echo "Removing pd* from ${INSTALL_PATH}"
+rm $INSTALL_PATH/pd*
+echo ""
+echo "Removed"
+echo ""
