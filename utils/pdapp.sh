@@ -5,12 +5,16 @@ if [ $# -ne 1 ]; then
     exit 1
 fi
 
-cd /tmp &&
+TMP=$HOME/tmp
+
+mkdir -p $TMP &&
+
+cd $TMP &&
 git clone https://github.com/pdy/AppTemplate.git
-sudo rm -r AppTemplate/.git
+rm -rf AppTemplate/.git
 cd - &&
 
-mv /tmp/AppTemplate $1 &&
+mv $TMP/AppTemplate $1 &&
 
 rm $1/README.md
 
