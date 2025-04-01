@@ -5,4 +5,5 @@ if [ $# -ne 1 ]; then
     exit 1
 fi
 
-readelf -d $1 | grep NEEDED
+#readelf -d $1 | grep NEEDED
+ldd -d $1
