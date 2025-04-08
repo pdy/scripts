@@ -7,7 +7,7 @@ fi
 
 #sudo apt install python3-venv
 
-name=$1
+name = $1
 
 python3 -m venv $name 
-$name/bin/pip3 install https://github.com/gojuno/make-profiler/archive/master.zip
+$name install https://github.com/gojuno/make-profiler/archive/master.zip
