@@ -5,4 +5,4 @@ if [ $# -ne 1 ]; then
     exit 1
 fi
 
-readelf -Ws --dyn-syms $1 
+readelf -Ws --demangle --dyn-syms $1
